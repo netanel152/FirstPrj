@@ -4,7 +4,7 @@ import { UserDTO } from './dto/user.dto';
 @Controller('user')
 export class UserController {
   @Post()
-  async addUser(@Body() user: UserDTO): Promise<UserDTO> {
+  async addUser(@Body() user: UserDTO) {
     return user;
   }
 }
